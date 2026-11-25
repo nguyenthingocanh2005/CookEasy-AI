@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "CookEasy AI",
+    "slug": "cookeasy-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cookeasy",
+    "userInterfaceStyle": "light",
+    
+  "android": {
+    "package": "com.cookeasy.ai",
+    "adaptiveIcon": {
+      "backgroundColor": "#E8F5E9"
+    },
+    "intentFilters": [
+      {
+        "action": "VIEW",
+        "autoVerify": false,
+        "data": [
+          {
+            "scheme": "cookeasy",
+            "host": "reset-password"
+          }
+        ],
+        "category": ["BROWSABLE", "DEFAULT"]
+      }
+    ]
+  },
+
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CookEasy AI uses your photos to recognize ingredients.",
+          "cameraPermission": "CookEasy AI uses your camera to scan ingredients."
+        }
+      ],
+      "expo-font",
+      "expo-splash-screen",
+      "expo-status-bar",
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

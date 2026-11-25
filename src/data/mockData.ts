@@ -1,0 +1,236 @@
+import { Comment, Recipe, User } from "@/types";
+
+const now = "2026-01-10T08:00:00.000Z";
+
+export const currentUser: User = {
+  uid: "user-demo",
+  displayName: "Alex Morgan",
+  email: "alex@cookeasy.app",
+  photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=240&q=80",
+  dietaryPreferences: ["High protein", "Less sugar"],
+  createdAt: now,
+  updatedAt: now,
+};
+
+export const recipes: Recipe[] = [
+  {
+    id: "green-goddess-pasta",
+    name: "Green Goddess Pasta",
+    description: "Silky herb sauce, roasted tomatoes, and fresh parmesan in every vibrant bite.",
+    imageUrl: "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1200&q=85",
+    ingredients: [
+      { id: "g1", name: "Spaghetti", quantity: 250, unit: "g" },
+      { id: "g2", name: "Baby spinach", quantity: 2, unit: "cups" },
+      { id: "g3", name: "Basil", quantity: 1, unit: "cup" },
+      { id: "g4", name: "Cherry tomatoes", quantity: 180, unit: "g" },
+      { id: "g5", name: "Parmesan", quantity: 40, unit: "g" },
+    ],
+    instructions: [
+      {
+        id: "gs1",
+        title: "Cook the pasta",
+        description:
+          "Boil in well-salted water until just al dente. Reserve one cup of pasta water.",
+        duration: 10,
+      },
+      {
+        id: "gs2",
+        title: "Blend the sauce",
+        description:
+          "Blend spinach, basil, parmesan, olive oil, garlic, and a splash of pasta water until silky.",
+        duration: 5,
+      },
+      {
+        id: "gs3",
+        title: "Bring it together",
+        description:
+          "Toss the pasta with green sauce over low heat. Fold in roasted tomatoes and finish with parmesan.",
+        duration: 4,
+      },
+    ],
+    preparationTime: 10,
+    cookingTime: 20,
+    totalTime: 30,
+    servings: 2,
+    difficulty: "Easy",
+    category: "Dinner",
+    cuisine: "Italian",
+    authorId: "chef-mira",
+    rating: 4.9,
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: "sunshine-bowl",
+    name: "Sunshine Grain Bowl",
+    description: "Golden vegetables, creamy avocado, herbs, and a bright citrus dressing.",
+    imageUrl: "https://images.unsplash.com/photo-1554878015-e51ff096a767?w=1200&q=85",
+    ingredients: [
+      { id: "s1", name: "Quinoa", quantity: 1, unit: "cup" },
+      { id: "s2", name: "Avocado", quantity: 1 },
+      { id: "s3", name: "Sweet potato", quantity: 1 },
+      { id: "s4", name: "Chickpeas", quantity: 1, unit: "cup" },
+    ],
+    instructions: [
+      {
+        id: "ss1",
+        title: "Roast vegetables",
+        description: "Roast seasoned sweet potato and chickpeas until golden at the edges.",
+        duration: 22,
+      },
+      {
+        id: "ss2",
+        title: "Build the bowl",
+        description: "Layer quinoa, vegetables, avocado, and herbs. Drizzle with citrus dressing.",
+        duration: 5,
+      },
+    ],
+    preparationTime: 12,
+    cookingTime: 25,
+    totalTime: 37,
+    servings: 2,
+    difficulty: "Easy",
+    category: "Healthy",
+    cuisine: "Mediterranean",
+    authorId: "chef-jules",
+    rating: 4.8,
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: "tomato-basil-rigatoni",
+    name: "Tomato Basil Rigatoni",
+    description: "A comforting weeknight pasta with slow-simmered tomatoes and fragrant basil.",
+    imageUrl: "https://images.unsplash.com/photo-1601823281975-75d81b28c373?w=1200&q=85",
+    ingredients: [
+      { id: "t1", name: "Rigatoni", quantity: 300, unit: "g" },
+      { id: "t2", name: "Tomatoes", quantity: 4 },
+      { id: "t3", name: "Basil", quantity: 1, unit: "handful" },
+    ],
+    instructions: [
+      {
+        id: "ts1",
+        title: "Make the sauce",
+        description: "Sauté garlic, add tomatoes, and simmer until rich and glossy.",
+        duration: 18,
+      },
+      {
+        id: "ts2",
+        title: "Toss and serve",
+        description: "Toss with pasta, basil, and parmesan. Season generously.",
+        duration: 4,
+      },
+    ],
+    preparationTime: 8,
+    cookingTime: 22,
+    totalTime: 30,
+    servings: 3,
+    difficulty: "Easy",
+    category: "Quick Meals",
+    cuisine: "Italian",
+    authorId: "chef-mira",
+    rating: 4.7,
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: "spiced-harvest-bowl",
+    name: "Spiced Harvest Bowl",
+    description: "Warm grains and seasonal vegetables with a deeply aromatic spice blend.",
+    imageUrl: "https://images.unsplash.com/photo-1574343033363-59ab8b5d7710?w=1200&q=85",
+    ingredients: [
+      { id: "h1", name: "Brown rice", quantity: 1, unit: "cup" },
+      { id: "h2", name: "Seasonal vegetables", quantity: 3, unit: "cups" },
+      { id: "h3", name: "Tahini", quantity: 3, unit: "tbsp" },
+    ],
+    instructions: [
+      {
+        id: "hs1",
+        title: "Season and roast",
+        description: "Coat vegetables in spices and roast until caramelized.",
+        duration: 25,
+      },
+      {
+        id: "hs2",
+        title: "Finish",
+        description: "Serve over rice with tahini sauce and fresh herbs.",
+        duration: 5,
+      },
+    ],
+    preparationTime: 10,
+    cookingTime: 30,
+    totalTime: 40,
+    servings: 2,
+    difficulty: "Medium",
+    category: "Lunch",
+    cuisine: "Middle Eastern",
+    authorId: "chef-nora",
+    rating: 4.6,
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: "creamy-lemon-pasta",
+    name: "Creamy Lemon Pasta",
+    description: "Bright, silky pasta with lemon, cracked pepper, and a delicate parmesan finish.",
+    imageUrl: "https://images.unsplash.com/photo-1625128726772-ab1d76ef976e?w=1200&q=85",
+    ingredients: [
+      { id: "l1", name: "Pasta", quantity: 250, unit: "g" },
+      { id: "l2", name: "Lemon", quantity: 1 },
+      { id: "l3", name: "Parmesan", quantity: 60, unit: "g" },
+    ],
+    instructions: [
+      {
+        id: "ls1",
+        title: "Cook pasta",
+        description: "Cook until al dente, reserving starchy water.",
+        duration: 10,
+      },
+      {
+        id: "ls2",
+        title: "Emulsify",
+        description: "Toss with lemon, parmesan, butter, and pasta water until glossy.",
+        duration: 5,
+      },
+    ],
+    preparationTime: 5,
+    cookingTime: 15,
+    totalTime: 20,
+    servings: 2,
+    difficulty: "Easy",
+    category: "Dinner",
+    cuisine: "Italian",
+    authorId: "chef-jules",
+    rating: 4.8,
+    createdAt: now,
+    updatedAt: now,
+  },
+];
+
+export const initialComments: Comment[] = [
+  {
+    id: "comment-1",
+    recipeId: "green-goddess-pasta",
+    userId: "user-rina",
+    userName: "Rina Lee",
+    content: "So fresh and easy. I added a squeeze of lemon and it was perfect.",
+    createdAt: "2026-01-09T18:30:00.000Z",
+  },
+  {
+    id: "comment-2",
+    recipeId: "green-goddess-pasta",
+    userId: "user-demo",
+    userName: "Alex Morgan",
+    content: "This has become my favorite quick dinner.",
+    createdAt: "2026-01-10T09:15:00.000Z",
+  },
+];
+
+export const categories = [
+  { name: "Breakfast", icon: "sunny-outline" },
+  { name: "Lunch", icon: "restaurant-outline" },
+  { name: "Dinner", icon: "moon-outline" },
+  { name: "Healthy", icon: "leaf-outline" },
+  { name: "Desserts", icon: "ice-cream-outline" },
+  { name: "Quick Meals", icon: "flash-outline" },
+] as const;

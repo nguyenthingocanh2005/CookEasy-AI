@@ -1,0 +1,10 @@
+{
+  "description": "AI-powered cooking assistant that helps users discover recipes based on available ingredients. Scan ingredients with your camera, get personalized recipe suggestions, and follow step-by-step cooking instructions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

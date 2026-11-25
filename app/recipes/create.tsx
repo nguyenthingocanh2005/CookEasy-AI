@@ -1,0 +1,1 @@
+export { CreateRecipeScreen as default } from "@/presentation/screens/CreateRecipeScreen";
